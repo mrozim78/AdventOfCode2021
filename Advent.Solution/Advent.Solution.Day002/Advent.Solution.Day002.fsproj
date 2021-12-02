@@ -1,17 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Program.fs" />
+      <Compile Include="Solution.fs" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Advent.Solution.Day001\Advent.Solution.Day001.fsproj" />
-      <ProjectReference Include="..\Advent.Solution.Day002\Advent.Solution.Day002.fsproj" />
       <ProjectReference Include="..\Advent.Solution.Day\Advent.Solution.Day.fsproj" />
     </ItemGroup>
 

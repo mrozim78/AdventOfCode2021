@@ -21,7 +21,7 @@ type Solution() =
                
     let listToTripleSumList(numbers:int list)=
         seq {0..1..numbers.Length-3}
-        |> Seq.map(fun a ->  numbers.GetSlice(Some(a),None) |> Seq.take 3 |> Seq.sum)
+        |> Seq.map(fun index ->  numbers.GetSlice(Some(index),None) |> Seq.take 3 |> Seq.sum)
         |> Seq.toList
         
     
