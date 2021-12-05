@@ -10,6 +10,7 @@ let printSolution(dayString:string):Unit =
         | "002" -> solveOneSolution(Advent.Solution.Day002.Solution())
         | "003" -> solveOneSolution(Advent.Solution.Day003.Solution())
         | "004" -> solveOneSolution(Advent.Solution.Day004.Solution())
+        | "005" -> solveOneSolution(Advent.Solution.Day005.Solution())
         | _ -> None , None
     let (day,value) = solution
     if (day.IsSome && value.IsSome) then
@@ -24,4 +25,5 @@ let main _ =
     printSolution "002"
     printSolution "003"
     printSolution "004"
+    printSolution "005"
     0  
