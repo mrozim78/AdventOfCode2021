@@ -20,17 +20,6 @@ type Solution() =
             seq{0..1..8} |>
             Seq.map(fun a->a, numbers |> List.where(fun b->b=a) |> List.length |> bigint )
        Map(seq)
-     let dayTick(state:int list)=
-         let newLampions =
-             state
-             |> List.where(fun a->a=0)
-             |> List.map(fun a->8)
-         let newState =
-            state
-            |> List.map(fun a-> if a>0 then a-1 else 6)
-         
-         newState |> List.append newLampions
-         
      let dayTickSymbolic(mapNumbers:Map<int,bigint>)=
        let mapDictionary = Dictionary<int,bigint>()
        seq{0..1..8}
