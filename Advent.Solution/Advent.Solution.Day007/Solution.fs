@@ -17,9 +17,9 @@ type Solution() =
             
         let min = lengths |> Seq.map(fun a->snd(a)) |> Seq.min
         
-        let minLenghts = lengths |> Seq.where(fun a-> snd(a)=min)|> Seq.toList
+        let minLengths = lengths |> Seq.where(fun a-> snd(a)=min)|> Seq.toList
         
-        snd(minLenghts.[0])
+        snd(minLengths.[0])
         
     let coeff (row:int)=
         row*(row+1)/2 |> int
@@ -30,9 +30,9 @@ type Solution() =
             
         let min = lengths |> Seq.map(fun a->snd(a)) |> Seq.min
         
-        let minLenghts = lengths |> Seq.where(fun a-> snd(a)=min)|> Seq.toList
+        let minLengths = lengths |> Seq.where(fun a-> snd(a)=min)|> Seq.toList
         
-        snd(minLenghts.[0])
+        snd(minLengths.[0])
     
     let solver =
         let data = readNumbers ("../../../../../data/Day007/data.txt")
