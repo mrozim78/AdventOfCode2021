@@ -16,6 +16,7 @@
       <ProjectReference Include="..\Advent.Solution.Day004\Advent.Solution.Day004.fsproj" />
       <ProjectReference Include="..\Advent.Solution.Day005\Advent.Solution.Day005.fsproj" />
       <ProjectReference Include="..\Advent.Solution.Day006\Advent.Solution.Day006.fsproj" />
+      <ProjectReference Include="..\Advent.Solution.Day007\Advent.Solution.Day007.fsproj" />
       <ProjectReference Include="..\Advent.Solution.Day\Advent.Solution.Day.fsproj" />
     </ItemGroup>
 
