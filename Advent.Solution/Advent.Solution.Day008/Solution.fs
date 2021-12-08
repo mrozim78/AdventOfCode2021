@@ -120,4 +120,4 @@ type Solution() =
            let solveOne , solveTwo = solver
            $"[ Part 1 value {solveOne} ] [ Part 2 value {solveTwo} ]"
          member this.Day() =
-            7
+            8
